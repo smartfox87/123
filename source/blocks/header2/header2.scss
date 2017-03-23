@@ -1,0 +1,32 @@
+// Для импорта в диспетчер подключений: @import './source/blocks/header2/header2.scss';
+
+@import '../../scss/variables.scss';     // только для удобства обращения к переменным
+@mixin font() {
+  color: #000;
+}
+
+.header2 {
+  
+}
+p {
+  @include font;
+  position: absolute;
+  top: 10px;
+  left: 23px;
+
+  display: block;
+
+  width: 20px;
+  height: 50px;
+
+  font-weight: bolder;
+  font-size: 30px;
+  color: blue;
+  text-decoration: underline;
+  font-style: italic;
+
+  background: yellow;
+  a:hover {
+    color: #000;
+  }
+}
